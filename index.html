@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SOUSAFLIX</title> 
+ 
+</head>
+<body>
+  <div class="header">
+    <div class="logo">SOUSAFLIX</div>
+  </div>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#recomendados">Recomendados</a></li>
+      <li><a href="#series">Séries</a></li>
+      <li><a href="#filmes">Filmes</a></li>
+      <li><a href="#kids">Kids</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="search-box">
+    <input type="text" placeholder="Buscar...">
+  </div>
+
+  <div class="actions">
+    <button class="action-btn" onclick="changeText()">Clique aqui</button>
+    <form id="emailForm" class="email-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Digite seu email">
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    <button class="modal-button" onclick="showModal()">Sair</button>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>Sair</p>
+      <button class="modal-button modal-button-close" onclick="closeModal()">Fechar</button>
+    </div>
+  </div>
+  <section id="recomendados">
+  <h2>Recomendados</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="carousel" id="carousel">
+      <a href="supernatural.html">
+      <img src="https://m.media-amazon.com/images/I/713O-xfkw5L.jpg" alt="Filme 1">
+      </a>
+      <a href="it_serie.html">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZxu9elTUB__lrNuVAGn3aRcJ-hWbseK6w3YTchWC2vwrONWBi" alt="Filme 2">
+      </a>
+      <a href="medo.html">
+      <img src="https://br.web.img3.acsta.net/medias/nmedia/18/91/11/68/20146473.jpg" alt="Filme 3">
+      </a>
+      <a href="frank.html">
+      <img src="https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_.jpg" 
+      alt="Filme 4">
+      </a>
+      <a href="premonicao.html">
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/55eba4b4c0d171258c7cab164f88749c311a2050ae8141e62766baa4c9affa01.jpg" alt="Filme 5">
+      </a>
+      <a href="enola_homes.html">
+      <img src="https://m.media-amazon.com/images/M/MV5BZjRjZjZhNzUtMDQyMC00OWZmLWIzMjQtZDM2OWRhNzgwOGU2XkEyXkFqcGc@._V1_.jpg" alt="Filme 6">
+      </a>
+      <a href="premonicao3.html">
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/dda4dfd12ef7d466c1e350b4ad737b0c85eec887f8cc6f0161a6addf1bb51c0b.jpg" alt="Filme 7">
+      </a>
+      <a href="zumbilandia.html">
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/424178915c13b06edf11680661e6c93ce947178564b6b49dae646987d85620a7.jpg" alt="Filme 8">
+      </a>
+      <a href="duff.html">
+      <img src="https://br.web.img2.acsta.net/pictures/15/07/02/20/13/170494.jpg" alt="Filme 9">
+      </a>
+      <a href="os_novatos.html">
+      <img src="https://br.web.img2.acsta.net/img/28/7d/287d00e6df74f02b2f4298f853f63467.png" alt="Filme 10">
+      </a>
+      <a href="voce.html">
+      <img src="https://images.justwatch.com/poster/251792668/s718/temporada-3.jpg" alt="Filme 11">
+      </a>
+      <a href="twd.html">
+      <img src="https://preview.redd.it/wy402i0ybbfa1.jpg?auto=webp&s=27235a6d29a576ea652a540d31463b40d25cb9d7" alt="Filme 12">
+      </a>
+      <a href="tvd.html">
+      <img src="https://images.justwatch.com/poster/176980279/s718/diarios-de-um-vampiro.jpg" alt="Filme 13">
+      </a>
+      <a href="got.html">
+      <img src="https://m.media-amazon.com/images/I/91eXHA-8K9L.jpg" alt="Filme 14">
+      </a>
+      <a href="rua_medopt2.html">
+      <img src="https://trilhadomedo.com/wp-content/uploads/2021/07/rua-do-medo-1978.jpg" alt="Filme 16">
+      </a>
+      <a href="hypnotic.html">
+      <img src="https://br.web.img3.acsta.net/pictures/21/10/06/09/27/2075191.jpg" alt="Filme 17">
+      </a>
+      <a href="ilha_do_medo.html">
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSouXjyf-HfKhRlLUnJIyPLZmV2Vi_4GPsWUgVBVeuav3-KNws7" alt="Filme 18">
+      </a>
+      <a href="batmam_cavalheiro.html">
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/ae8dddd0abc2fac14052f29bc2ae15ddd86374c0d3bd017171ee6473b8933b29.jpg" alt="Filme 19">
+      </a>
+      <a href="tempo.html">
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/24de6f1ba5c8ad2c3f65c8ab8bf2b8f83c7b41c0f341b335a2e651da5140f7f9.jpg" alt="Filme 20">
+      </a>
+    </div>
+  </section>
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+  <section id="filmes">
+  <h2>Filmes</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel2(-2)">&#10094;</button>
+    <div class="carousel" id="carousel2">
+      <a href="batmam_cavalheiro.html">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/ae8dddd0abc2fac14052f29bc2ae15ddd86374c0d3bd017171ee6473b8933b29.jpg" alt="Filme 1"></a>
+      <a href="os_suspeitos.html">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS1nAuc3Sd3P-9gbunz2Te5ZV9_2rLr5CzTHte6uTkFD6TD035" alt="Filme 2"></a>
+      <a href="tdm.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBOuSm7oyIe_011NtkMuNHwxtZNFQIeqZLtMHjM3K33dEOgOe" alt="Filme 3"></a>
+      <a href="advogado_do_diabo.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLYu_HeSFZiZA4n8QUZVb4j2jPHhkFdT8KsHGOuBcQPAtElHS" alt="Filme 4"></a>
+      <a href="hannibal.html">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Hannibal_movie_poster.jpg/250px-Hannibal_movie_poster.jpg" alt="Filme 5"></a>
+      <a href="rua_medopt2.html">
+        <img src="https://trilhadomedo.com/wp-content/uploads/2021/07/rua-do-medo-1978.jpg" alt="Filme 6"></a>
+      <a href="meu_malvado_fvrt.html">
+        <img src="https://ingresso-a.akamaihd.net/prd/img/movie/meu-malvado-favorito-4/4d756249-3b88-4b59-baa2-527f5e3d4c3e.webp" alt="Filme 7"></a>
+      <a href="venom3.html">
+        <img src="https://br.web.img3.acsta.net/img/10/7a/107aa110584ecf393a0e85e1611235f5.jpg" alt="Filme 8"></a>
+      <a href="frank.html">
+        <img src="https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_.jpg" alt="Filme 9"></a>
+      <a href="amor_de_aluguel.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35fzUmyyEKqrbcXPUfF7oMtlO3eoMGVOpLnJ3h0vc8lwL9k-n" alt="Filme 10"></a>
+      <a href="it_a_Coisa.html">
+        <img src="https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg" alt="Filme 11"></a>
+      <a href="maze_runner.html">
+        <img src="https://a-static.mlcdn.com.br/1500x1500/maze-runner-correr-ou-morrer-fox-sony-dadc/cultmidia/7780987a476c11efbf8f4201ac18501b/4f547174dd380478e097fad8ce78c2b0.jpeg" alt="Filme 12"></a>
+      <a href="ilha_do_medo.html">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSouXjyf-HfKhRlLUnJIyPLZmV2Vi_4GPsWUgVBVeuav3-KNws7" alt="Filme 13"></a>
+      <a href="hypnotic.html">
+        <img src="https://br.web.img3.acsta.net/pictures/21/10/06/09/27/2075191.jpg" alt="Filme 14"></a>
+      <a href="paranorman.html">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST5XzHxIah7v0iAKYGvdmk-cln4d0oIIsJpX4mv0MBBe7nXgNL" alt="Filme 16"></a>
+      <a href="a_noiva_cadaver.html">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFnkFNJC1RaGnUogykGQToN7RxTMs2sxt0B8mwfmVbFFQGeuMI" alt="Filme 17"></a>
+      <a href="scooby_doo.html">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo31ZjohKyFMIgptI2uK3RNPzTTBhM8Ajy9Ma0E8fORRH-jzOb" alt="Filme 18"></a>
+      <a href="esquadrao_suicida.html">
+        <img src="https://br.web.img3.acsta.net/pictures/16/06/22/00/19/008711.jpg" alt="Filme 19"></a>
+      <a href="x_men.html">
+        <img src="https://img.elo7.com.br/product/zoom/267969F/big-poster-x-men-dias-de-um-futuro-esquecido-lo05-90x60-cm-nerd.jpg" alt="Filme 20"></a>
+      
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel2(2)">&#10095;</button>
+  </div>
+</section>
+
+  <script>
+    function showModal() {
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('carousel');
+      const scrollAmount = 165;
+
+      if (direction === 1) {
+        carousel.scrollLeft += scrollAmount;
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+          carousel.scrollLeft = 0; 
+        }
+      } else {
+        carousel.scrollLeft -= scrollAmount;
+        if (carousel.scrollLeft <= 0) {
+          carousel.scrollLeft = carousel.scrollWidth; 
+        }
+      }
+    }
+  </script>
+  <script>
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('carousel');
+      const scrollAmount = 200 * direction;
+      carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  
+    function scrollCarousel2(direction) {
+      const carousel = document.getElementById('carousel2');
+      const scrollAmount = 200 * direction;
+      carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  
+    function showModal() {
+      document.getElementById('modal').style.display = 'flex';
+    }
+  
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  
+    function changeText() {
+      alert('Botão clicado!'); 
+    }
+  
+    document.getElementById('emailForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Email enviado: ' + document.getElementById('email').value);
+      document.getElementById('email').value = '';
+    });
+  </script>
+  <section id="series">
+<h2>Séries</h2>
+<div class="carousel-container">
+  <button class="carousel-btn left" onclick="scrollCarousel3(-1)">&#10094;</button>
+  <div class="carousel" id="carousel3">
+    <a href="twd.html"><img src="https://preview.redd.it/wy402i0ybbfa1.jpg?auto=webp&s=27235a6d29a576ea652a540d31463b40d25cb9d7" alt="Série 1"></a>
+    <a href="a_maldicao_da_residencia_hill.html"><img src="https://images.justwatch.com/poster/117335414/s718/temporada-1.jpg" alt="Série 2"></a>
+    <a href="dexter.html"><img src="https://m.media-amazon.com/images/I/81JKXT1j0OL._AC_UF894,1000_QL80_.jpg" alt="Série 3"></a>
+    <a href="tlou.html"><img src="https://br.web.img3.acsta.net/pictures/22/11/30/19/53/5856320.jpg" alt="Série 4"></a>
+    <a href="it_serie.html"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZxu9elTUB__lrNuVAGn3aRcJ-hWbseK6w3YTchWC2vwrONWBi" alt="Série 5"></a>
+    <a href="eu_patroa_eascrias.html"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK3zcwK-kZKjNkijmXFhSd3h2WddrUy8Iv8mIxIrmWoUGJi_NM" alt="Série 6"></a>
+    <a href="voce.html"><img src="https://images.justwatch.com/poster/251792668/s718/temporada-3.jpg" alt="Série 7"></a>
+    <a href="cidade_invisivel.html"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyEhcb3GC8Np7ywIOx0jhbCYu6Uff-io1MFov28hEvSAGNNbJG" alt="Série 8"></a>
+    <a href="got.html"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuyyGcC9Z0yrdI7z1P0S4VGfKuw-bHMsK0BJ36xPhtBadqTVny" alt="Série 9"></a>
+    <a href="twth.html"><img src="https://br.web.img3.acsta.net/pictures/19/11/29/17/57/5161763.jpg" alt="Série 10"></a>
+    <a href="#"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/f4a668128908461.615f9e2cb2cc7.png" alt="Série 11"></a>
+    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7uegBH-xut32otTxF_dbg7H-_KE5Q1LNQXn5cNApEhWFgZUAJ" alt="Série 12"></a>
+    <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRQA5PMd_tejZuhUxk0S5JW7IWTmdKignL9gNsgZ_lHdt-IHrj" alt="Série 13"></a>
+    <a href="#"><img src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/06/UA_S2_Vertical_Main_RGB_EN-US.jpg" alt="Série 14"></a>
+    <a href="#"><img src="https://m.media-amazon.com/images/M/MV5BOWVjYTlhZGEtMGRmNS00NWU1LWE4NzQtYjE5OTdjNzBmZDI4XkEyXkFqcGc@._V1_.jpg" alt="Série 15"></a>
+    <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQV-FNchJ2C_qqk9yHHJV-1WR0csDIYo7PVL84FHYcptAFJTHa-" alt="Série 16"></a>
+    <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6yWLGffD60BCVLlNu_HA1cBmzG0Cfvk3Gr3p09klBBWhK0Nyl" alt="Série 17"></a>
+    <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkBj_zIAgqHMLXdIUO_6kBeLlMz0VY--Qsg0tdCAEdRDv52Oj6" alt="Série 18"></a>
+    <a href="#"><img src="https://i.ebayimg.com/images/g/dPUAAOSwd~ZiFf6x/s-l1200.jpg" alt="Série 19"></a>
+    <a href="#"><img src="https://br.web.img3.acsta.net/pictures/19/09/20/20/10/0249008.jpg" alt="Série 20"></a>
+    
+  </div>
+  <button class="carousel-btn right" onclick="scrollCarousel3(1)">&#10095;</button>
+</div>
+</section>
+
+    <script>
+        function scrollCarousel(direction) {
+          const carousel = document.getElementById('carousel');
+          const scrollAmount = 200 * direction;
+          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      
+        function scrollCarousel2(direction) {
+          const carousel = document.getElementById('carousel2');
+          const scrollAmount = 200 * direction;
+          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      
+        function showModal() {
+          document.getElementById('modal').style.display = 'flex';
+        }
+      
+        function closeModal() {
+          document.getElementById('modal').style.display = 'none';
+        }
+      
+        function changeText() {
+          alert('Botão clicado!'); 
+        }
+      
+        document.getElementById('emailForm').addEventListener('submit', function (e) {
+          e.preventDefault();
+          alert('Email enviado: ' + document.getElementById('email').value);
+          document.getElementById('email').value = '';
+        });
+      </script>
+      <script>
+        function scrollCarousel(direction) {
+          const carousel = document.getElementById("carousel");
+          const scrollAmount = 300;
+          carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+      
+        function scrollCarousel2(direction) {
+          const carousel2 = document.getElementById("carousel2");
+          const scrollAmount = 300;
+          carousel2.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+      
+        function scrollCarousel3(direction) {
+          const carousel3 = document.getElementById("carousel3");
+          const scrollAmount = 300;
+          carousel3.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+      </script>
+</div>
+<section id="kids">
+<!--  seção kids -->
+<section class="kids-section">
+  <h2>Kids</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel3(-2)">&#10094;</button>
+    <div class="carousel" id="carousel3">
+      <a href="#"><img src="https://br.web.img3.acsta.net/pictures/17/12/07/11/33/0502209.jpg" alt="Kids 1"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe82n27THQqz8s3OM6jNeQKcdK64Htj72ALIZMxhOXXRIuloWA" alt="Kids 2"></a>
+      <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7KOMSxTAT-sBSPuhQgGwkF5Qq_vZOGQj0T58FkAdFEC4xtpDz" alt="Kids 3"></a>
+      <a href="#"><img src="https://image.tmdb.org/t/p/original/sL5oaGwe7pHPIJJUX4H0wIa27R9.jpg" alt="Kids 4"></a>
+      <a href="rio.html"><img src="https://m.media-amazon.com/images/M/MV5BNTdmMmUzNjAtNTRkYi00YjM3LWE3OTktNTY5MjlmOGZkMGJlXkEyXkFqcGc@._V1_.jpg" alt="Kids 5"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE2t138I37V7uTrgAGDW56gedLIbSEfTqfUpBpQq4un87mB1ph" alt="Kids 6"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDRq4Yb29oj9LSq2HJ8MASnr3rkc-X6AHYZcp-9HGMEFfLZFi5" alt="Kids 7"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiYq-zHgWbFjTm-hnljUptb1NiWOMZR8jTto00hJshFTYGbKD3" alt="Kids 8"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL1-Kw7xDV5PRTGX6QwMH43pMPbspXQwcJTLxsZuy_XnoYE8t9" alt="Kids 9"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKmC-j0S5BlTv5l-Lz40zNX706efEpigij46WyP9J9dxOvUDzr" alt="Kids 10"></a>
+      <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJS903p9h1mRc-BJ10YctAXh6D8Yli97pLW-6egZNfBo5u7Wqr" alt="Kids 11"></a>
+      <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/4e67efbe61a1cd52df285b95332d349a919888bab95c880b550bb22934afaaa7.jpg" alt="Kids 12"></a>
+      <a href="#"><img src="https://m.media-amazon.com/images/I/91LSgjDd11L._AC_UF894,1000_QL80_.jpg" alt="Kids 13"></a>
+      <a href="#"><img src="https://br.web.img3.acsta.net/medias/nmedia/18/95/28/62/20394609.jpg" alt="Kids 14"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkry27EIhBvrcslT82JUouuATJuRGQp0lqlWuyp55w9XPSpmy" alt="Kids 15"></a>
+      <a href="#"><img src="https://br.web.img2.acsta.net/pictures/17/12/14/19/33/4566035.jpg" alt="Kids 16"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBjhCwr1YoQTFcFFH-MNGAWmBLDK_5wXTFYaTM1UiBEFvJ5Cl_" alt="Kids 17"></a>
+      <a href="#"><img src="https://br.web.img3.acsta.net/r_1280_720/pictures/210/221/21022148_20130723205315012.jpg" alt="Kids 18"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPfzXxwfcHt0x6VmlJGZOyD40czoumgws52kXgqC6DGtwxlMpB" alt="Kids 19"></a>
+      <a href="#"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1l2FcdnN3g_fEJRjIbHvwaEOV41u7ppPtxV_X7TsC_46xedT1" alt="Kids 20"></a>
+      
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel3(2)">&#10095;</button>
+  </div>
+</section>
+</section>
+
+<!-- Script do carrossel -->
+<script>
+  function scrollCarousel3(direction) {
+    const carousel = document.getElementById("carousel3");
+    const scrollAmount = 300 * direction;
+    carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  }
+</script>
+<!-- seção horror -->
+<section id="horror" class="horror-section">
+  <h2>Horror</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarouselHorror(-2)">&#10094;</button>
+    <div class="carousel" id="carouselHorror">
+      <a href="invocacao4.html"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQACKoajZAkWj18SkYgQEGRyeFXIxf79yAGUl_-yNVsSTH3-65n" alt="Horror 1"></a>
+      <a href="#"><img src="https://br.web.img3.acsta.net/pictures/19/04/10/17/04/3935621.jpg" alt="Horror 2"></a>
+      <a href="#"><img src="https://musicart.xboxlive.com/7/28484d00-0000-0000-0000-000000000002/504/image.jpg" alt="Horror 3"></a>
+      <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/52b9156a072de791ace4ffa9366eb37d2de3137492d4738233a634816fd7fda7.jpg" alt="Horror 4"></a>
+      <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-4qHWkJJmz-9_towD2IvG8U1pSVe1U8mxZxl8kuFtgV2Fyi9I" alt="Horror 5"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS64MQjQg496AMli5m1k6-JBNaZdSDcRXjL2NBr3_bpVfwCOfQX" alt="Horror 6"></a>
+      <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFE1J1VSNb8vsNhNH8hbLu6LoX03xYqieqKMKolcAyoLohoUvY" alt="Horror 7"></a>
+      <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT03REIMNHBYDm9y5VSAsydo5_otPiXOjv795HgaUwZkI-n_Fdu" alt="Horror 8"></a>
+      <a href="#"><img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/abigail/images/regions/us/updates/onesheet.jpg" alt="Horror 9"></a>
+      <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/dc821323ff362f72eb6815068d1569bd329577362e4410201c8b76dc82f1f899.jpg" alt="Horror 10"></a>
+      <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/8745f44642af67265e62f304cc017108742bdbb9696b6abf519676caf437bcc0.jpg" alt="Horror 11"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwFgv8dJ4WfqDmfXjdFowWAfYqb0VDUKGSRfKrr2zCYXwc4DZ" alt="Horror 12"></a>
+      <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs9KHcQePA5tQ682ZKvi2H6WjCg5OBy-O43SFZo5Pxgw8fBcnG" alt="Horror 13"></a>
+      <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL8O9bwOZX90Dv0RjtTyBFUFr8xXNmrIkpxsWSR8rTy7nOSqjO" alt="Horror 14"></a>
+      <a href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4xS_2z4jDipIJEhxP4vz3Qkmua1BIvIi9QOSp4PnkedHc4JvU" alt="Horror 15"></a>
+      <a href="#"><img src="https://br.web.img2.acsta.net/medias/nmedia/18/90/67/48/20107748.jpg" alt="Horror 16"></a>
+      <a href="#"><img src="https://br.web.img2.acsta.net/pictures/19/08/14/16/00/5320567.jpg" alt="Horror 17"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkBImwp-DNJGXHa-Ba1qUpgCtIjF5IfUKlai_WicKiUGB7z0ml" alt="Horror 18"></a>
+      <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/7e7643a9a6346bd28b1d493dc59456375f24f8860b9713ce7737e14d48208116.jpg" alt="Horror 19"></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrv5CjCsnE4H7mZ9ZenKInJrtfyr3kb5rhZNNyRGUNDjonPVPM" alt="Horror 20"></a>
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarouselHorror(2)">&#10095;</button>
+  </div>
+</section>
+
+
+<!-- script de horror -->
+<script>
+  function scrollCarouselHorror(direction) {
+    const carousel = document.getElementById("carouselHorror");
+    const scrollAmount = 300 * direction;
+    carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  }
+</script>
+<a href="eu.html" target="_blank" style="width: 100px;"><footer>
+  <font color="white" style="font-size: 10px; font-family:Arial, Helvetica, sans-serif" >&copy;
+    iris.rodrigues@germinare.org.br&reg;</font>
+</footer></a>
+
+</body>
+</html>

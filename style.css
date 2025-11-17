@@ -1,0 +1,411 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #111;
+    padding: 20px 40px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+  }
+  
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8000ff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #8000ff;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #8000ff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.word {
+  cursor: pointer;
+}
+
+.search-box {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}
+
+.search-box input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #8000ff;
+  background-color: #222;
+  color: white;
+  width: 200px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 40px;
+}
+
+.action-btn, .submit-btn, .modal-button {
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.action-btn:hover, .submit-btn:hover, .modal-button:hover {
+  background-color: #5a00b3;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #8000ff;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 10px;
+  border: 2px solid #8000ff;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.email-form input:hover {
+  box-shadow: 0 0 10px #8000ff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-button-close {
+  background-color: #4a0072;
+}
+
+.modal-button-close:hover {
+  background-color: #a020f0;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #8000ff;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #8000ff;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  padding-left: 20px;
+  color: white;
+}
+/* seção kids */
+  .kids-section {
+    margin-top: 60px; 
+  }
+
+  .kids-section h2 {
+    color: white; 
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 20px 60px 20px;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px 0;
+    flex: 1;
+  }
+
+  .carousel img {
+    height: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+
+  .carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .carousel-btn.left {
+    margin-right: 10px;
+  }
+
+  .carousel-btn.right {
+    margin-left: 10px;
+  }
+/* seção horror */
+  .horror-section {
+    margin-top: 60px; 
+  }
+  .horror-section h2 {
+    color: white; 
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 20px 60px 20px;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px 0;
+    flex: 1;
+  }
+
+  .carousel img {
+    height: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+
+  .carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .carousel-btn.left {
+    margin-right: 10px;
+  }
+
+  .carousel-btn.right {
+    margin-left: 10px;
+  }
+  /* seção comédia */
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .carousel img {
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+
+  .carousel-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: purple;
+    z-index: 1;
+  }
+
+  .carousel-btn.left {
+    margin-right: 10px;
+  }
+
+  .carousel-btn.right {
+    margin-left: 10px;
+  }
+  /* seção fantasia */
+    .fantasy-section {
+    margin-top: 60px;
+  }
+
+  .fantasy-section h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #carouselFantasy img {
+    height: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  #carouselFantasy img:hover {
+    transform: scale(1.05);
+  }
+  .carousel-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-btn:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
